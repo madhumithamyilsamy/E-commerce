@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Best Seller - MyShop</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/common.css">
+
+  <script src="js/bestseller.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="top-banner"><marquee>Discounts upto 50%(use code: sales50)</marquee></div>
+    <div class="header-row">
+      <div class="logo">
+          <img src="images/PRODUCT/logo (2).png" alt="brand logo" />
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="best-seller.html" class="active">Best Seller</a>
+        <a href="new-arrival.html">New Arrival</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Body -->
+  <main>
+    <h1>Best Seller Products</h1>
+    <div class="category-filter">
+      <button onclick="filterProducts('all')">All</button>
+      <button onclick="filterProducts('men')">Men</button>
+      <button onclick="filterProducts('women')">Women</button>
+      <button onclick="filterProducts('kids')">Kids</button>
+    </div>
+    <div class="product-grid" id="product-container"></div>
+</main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="space">
+        <h3>Follow Us</h3>
+        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+        <br>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        <br>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a><br>
+        <a href="products.html">Products</a>
+        
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p><i class="fa fa-phone"></i> +91 99999 99999</p>
+        <p><i class="fa fa-envelope"></i> info@myshop.com</p>
+        <p><i class="fa fa-map-marker"></i> Chennai, India</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 StyleAura. All rights reserved.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>

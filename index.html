@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>E-Commerce</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <div class="top-banner">
+      <marquee>Discounts upto 50%(use code: sales50)</marquee>
+    </div>
+    <div class="header-row">
+      <div class="logo">
+          <img src="images/PRODUCT/logo (2).png" alt="brand logo" />
+        </div>
+      <nav class="active">
+        <a href="index.html" id="box1" class="active">Home</a>
+        <a href="about.html" id="box2">About</a>
+        <a href="best-seller.html" id="box3">Best Seller</a>
+        <a href="new-arrival.html" id="box4">New Arrival</a>
+        <a href="products.html" id="box5">Products</a>
+        <a href="contact.html" id="box6">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Body -->
+  <main>
+    <!-- Image Slider -->
+    <section class="slider">
+      <div class="slides">
+        <img src="images/group-bundle-shots.jpg" alt="Slide 1" class="active">
+        <img src="images/360-degree-product-views.jpg" alt="Slide 2">
+        <img src="images/lifestyle-product-images.jpg" alt="Slide 3">
+      </div>
+
+      <!-- Navigation Arrows -->
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+
+      <!-- Dots -->
+      <div class="dots"></div>
+    </section>
+
+
+    <!-- Best Seller -->
+    <section class="best-seller">
+      <h2>Best Seller Products</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="images\bestseller\waterfroof shirt.jpg" class="shirt" alt="Waterproof Shirt">
+          <h3>Stay Dry, Stay Stylish</h3>
+          <p>Our waterproof jackets and raincoats are crafted from innovative, breathable fabrics...</p>
+        </div>
+        <div class="product">
+          <img src="images\bestseller\shirt.webp" class="shirt" alt="Sketched Shirt">
+          <h3>Wear Your Art</h3>
+          <p>Elevate your everyday wardrobe with a shirt that’s a canvas...</p>
+        </div>
+        <div class="product">
+          <img src="images\bestseller\cs.jpg" class="shirt" alt="Convertible Saree">
+          <h3>1 Saree, Endless Possibilities</h3>
+          <p>The convertible saree is a versatile game-changer for the contemporary woman...</p>
+        </div>
+        <div class="product">
+          <img src="images\bestseller\s.jpg" class="shirt" alt="Saree with Pocket">
+          <h3>Tradition, with a Twist</h3>
+          <p>Our innovative pocket saree combines the timeless beauty of the traditional drape...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews">
+      <h2>Product Reviews</h2>
+      <div id="review-container"></div>
+    </section> 
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <h2>Subscribe to our Newsletter</h2>
+      <form id="newsletter-form">
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="space">
+        <h3>Follow Us</h3>
+        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+        <br>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        <br>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a><br>
+        <a href="products.html">Products</a>
+
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p><i class="fa fa-phone"></i> +91 99999 99999</p>
+        <p><i class="fa fa-envelope"></i> info@myshop.com</p>
+        <p><i class="fa fa-map-marker"></i> Chennai, India</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 StyleAura. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="js/script.js" defer></script>
+
+</body>
+
+</html>
