@@ -1,4 +1,3 @@
-/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
@@ -7,14 +6,12 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: #fff;  /* White background */
+  background: #fff; 
   color: #222;
 }
 
-
-/* Header */
 header {
-  background: #000;   /* Black header */
+  background: #000;  
 }
 .top-banner {
   background: #000;
@@ -38,26 +35,24 @@ header {
   letter-spacing: 1px;
 }
 .logo .accent {
-  color: #0f0; /* Green accent for "Aura" */
+  color: #0f0;
 }
 nav a {
   margin-left: 15px;
   text-decoration: none;
-  color: #000000; /* Light gray links */
+  color: #000000; 
   font-weight: 500;
   padding-bottom: 3px;
   transition: all 0.3s ease;
 }
 nav a:hover {
-  color: #000000; /* White on hover */
+  color: #000000; 
 }
-/* Active page link */
 nav a.active {
-  border-bottom: 2px solid red; /* Red underline */
-  color: #000000; /* White text */
+  border-bottom: 2px solid red; 
+  color: #000000; 
 }
 
-/* Main Sections */
 main {
   padding: 20px;
 }
@@ -76,16 +71,14 @@ h1 {
 .about-right {
   flex: 2;
 }
-/* Slider Container */
 .slider {
   position: relative;
   width: 100%;
-  height: 250px; /* Adjust height */
+  height: 250px; 
   overflow: hidden;
   border-radius: 3px;
 }
 
-/* Slides */
 .slides img {
   width: 100%;
   height: 150%;
@@ -97,13 +90,11 @@ h1 {
   animation: fade 1s ease-in-out;
 }
 
-/* Fade Animation */
 @keyframes fade {
   from { opacity: 0.5; }
   to { opacity: 1; }
 }
 
-/* Arrows */
 .prev, .next {
   position: absolute;
   top: 50%;
@@ -121,7 +112,6 @@ h1 {
   color: #000;
 }
 
-/* Dots */
 .dots {
   text-align: center;
   position: absolute;
@@ -166,7 +156,6 @@ h1 {
   background: #c43e05;
 }
 
-/* Reviews */
 .reviews {
   margin-top: 30px;
 }
@@ -176,11 +165,9 @@ h1 {
   padding-left: 10px;
   font-style: italic;
 }
-
-/* Footer */
 footer {
   margin-top: 40px;
-  background: #000;   /* Black footer */
+  background: #000;   
   color: #eee;
 }
 .footer-top {
@@ -222,7 +209,6 @@ footer {
   background: #FF280F;
   color: #000;
 }
-/* index best seller*/
 .shirt{
   max-width: 200px; 
   height: 250px; 
@@ -237,10 +223,6 @@ footer {
   width: auto;
 }
 
-
-
-
-/* Product Grid */
 .best-seller .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -248,7 +230,6 @@ footer {
   justify-content: center;
 }
 
-/* Product Card */
 .best-seller .product {
   background: #fff;
   border-radius: 8px;
@@ -263,7 +244,6 @@ footer {
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
-/* Product Image */
 .best-seller .product img {
   max-width: 100%;
   height: 220px;
@@ -272,21 +252,17 @@ footer {
   margin-bottom: 15px;
 }
 
-/* Product Title */
 .best-seller .product h3 {
   font-size: 18px;
   margin: 10px 0;
   color: #111;
 }
 
-/* Product Description */
 .best-seller .product p {
   font-size: 14px;
   color: #555;
   line-height: 1.5;
 }
-
-
 .category-filter {
   margin: 20px 0;
   text-align: center;
@@ -304,4 +280,5 @@ footer {
   background: #0f0;
   color: #000;
 }
+
 
