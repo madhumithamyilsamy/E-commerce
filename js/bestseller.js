@@ -108,8 +108,9 @@ function filterProducts(category = "all"){
 
 }
 document.addEventListener("DOMContentLoaded", () => {
-  displayProducts("all");
+  filterProducts("all");
 });
+
 
 
 
