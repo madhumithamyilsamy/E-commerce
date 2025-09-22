@@ -85,7 +85,7 @@ const products = [
   }
 ];
 
-function displayProducts(category = String){
+function displayProducts(category = "all"){
     const container = document.getElementById("product-container");
     container.innerHTML = "";
     let filtered;
@@ -110,4 +110,5 @@ function displayProducts(category = String){
 document.addEventListener("DOMContentLoaded", () => {
   displayProducts("all");
 });
+
 
