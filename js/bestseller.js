@@ -91,31 +91,25 @@ const products = [
   }
 ];
 
-// Function to Render Products
 function displayProducts(category = "all") {
   const container = document.getElementById("product-container");
-  container.innerHTML = "";
+  container.innerText = "hiii";
 
-  const filtered = category === "all" ? products : products.filter(p => p.category === category);
+//   const filtered = category === "all" ? products : products.filter(p => p.category === category);
 
-  filtered.forEach(product => {
-    const div = document.createElement("div");
-    div.classList.add("product");
-    div.innerHTML = `
-      <img src="${product.img}" alt="${product.name}" style="max-width:200px; height:250px;">
-      <h3>${product.name}</h3>
-      <p>${product.desc}</p>
-    `;
-    container.appendChild(div);
-  });
-}
+//   filtered.forEach(product => {
+//     const div = document.createElement("div");
+//     div.classList.add("product");
+//     div.innerText = `
+//       <img src="${product.img}" alt="${product.name}" style="max-width:200px; height:250px;">
+//       <h3>${product.name}</h3>
+//       <p>${product.desc}</p>
+//     `;
+//     container.appendChild(div);
+//   });
+// }
 
-// Category Filter Function
-function filterProducts(category) {
-  displayProducts(category);
-}
-
-// On Page Load
-document.addEventListener("DOMContentLoaded", () => {
-  displayProducts("all"); // load all products initially
-});
+// // Category Filter Function
+// function filterProducts(category) {
+//   displayProducts(category);
+ }
