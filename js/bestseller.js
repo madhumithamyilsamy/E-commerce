@@ -1,4 +1,6 @@
+// Product Data (4 Men + 4 Women + 4 Kids)
 const products = [
+  // --- Men ---
   {
     id: 1,
     name: "Waterproof Jacket",
@@ -27,7 +29,9 @@ const products = [
     img: "images/bestseller/sneakers.webp",
     desc: "Lightweight sneakers perfect for everyday wear."
   },
- {
+
+  // --- Women ---
+  {
     id: 5,
     name: "Convertible Saree",
     category: "women",
@@ -55,7 +59,9 @@ const products = [
     img: "images/bestseller/handbag.jpg",
     desc: "Trendy handbag with spacious compartments."
   },
- {
+
+  // --- Kids ---
+  {
     id: 9,
     name: "Kids T-Shirt",
     category: "kids",
@@ -85,32 +91,31 @@ const products = [
   }
 ];
 
-function filterProducts(category = "all"){
-    const container = document.getElementById("product-container");
-    container.innerHTML = "";
-    let filtered;
-    if(category === "all"){
-        filtered = products;  
-    }
-    else{
-        filtered = products.filter(p=>p.category===category);
-    }
-    for(let i = 0; i<filtered.length;i++){
-        const p = filtered[i];
-    container.innerHTML+=`
-       <div class="product-card">
-              <img src="${p.img}" alt="${p.name}">
-              <h3>${p.name}</h3>
-              <p>${p.desc}</p>
-            </div>
-     `;
-    }
+// Function to Render Products
+function displayProducts(category = "all") {
+  const container = document.getElementById("product-container");
+  container.innerHTML = "";
 
+  const filtered = category === "all" ? products : products.filter(p => p.category === category);
+
+  filtered.forEach(product => {
+    const div = document.createElement("div");
+    div.classList.add("product");
+    div.innerHTML = `
+      <img src="${product.img}" alt="${product.name}" style="max-width:200px; height:250px;">
+      <h3>${product.name}</h3>
+      <p>${product.desc}</p>
+    `;
+    container.appendChild(div);
+  });
 }
+
+// Category Filter Function
+function filterProducts(category) {
+  displayProducts(category);
+}
+
+// On Page Load
 document.addEventListener("DOMContentLoaded", () => {
-  filterProducts("all");
+  displayProducts("all"); // load all products initially
 });
-
-
-
-
